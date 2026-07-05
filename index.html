@@ -1,41 +1,78 @@
-<!-- MAIN -->
-<main>
-    <h1>Nelida Colque Salas</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Card 1: About Me -->
-    <section class="card">
-        <h2>About Me</h2>
-        <div class="card-content">
-            <p>
-                Hello! I'm Nelida, a passionate web development student from Arequipa, Peru.
-                I love learning new technologies and building things that make a difference.
-                Currently, I'm diving deeper into dynamic web fundamentals and JavaScript.
-            </p>
-            <img src="images/profile.jpg" alt="Nelida Colque Salas" width="200" height="200" loading="lazy">
-        </div>
-    </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Nelida Colque Salas</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals – Nelida Colque Salas. Home page for the course, showcasing skills in HTML, CSS, and JavaScript.">
+    <meta name="author" content="Nelida Colque Salas">
 
-    <!-- Card 2: Dev Tools -->
-    <section class="card">
-        <h2>Dev Tools</h2>
-        <div class="card-content">
-            <p>
-                Here are some tools and technologies I'm currently working with:
-            </p>
-            <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-                <li>Chrome DevTools</li>
-            </ul>
-            <div class="icon-placeholder">⚙️💻</div>
-        </div>
-    </section>
-</main>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-<!-- FOOTER -->
-<footer>
-    <p>&copy; <span id="currentyear"></span> Nelida Colque Salas - Arequipa, Peru</p>
-    <p id="lastModified"></p>
-</footer>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/nelida-colque-11a8a2285" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <h1>Nelida Colque Salas</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>
+                    Hello! I'm Nelida, a passionate web development student from Arequipa, Peru.
+                    I love learning new technologies and building things that make a difference.
+                    Currently, I'm diving deeper into dynamic web fundamentals and JavaScript.
+                </p>
+                <img src="images/profile.jpg" alt="Nelida Colque Salas" width="200" height="200" loading="lazy">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Dev Tools</h2>
+            <div class="card-content">
+                <p>
+                    Here are some tools and technologies I'm currently working with:
+                </p>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Chrome DevTools</li>
+                </ul>
+                <div class="icon-placeholder">⚙️💻</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Nelida Colque Salas - Arequipa, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
