@@ -1,7 +1,8 @@
 /* ===== VARIABLES ===== */
 :root {
     --primary-color: #1a237e;
-    --secondary-color: #0d47a1;
+    --secondary-color: #1565c0;
+    /* Lighter blue for better contrast */
     --light-blue: #42a5f5;
     --background-color: #f5f7fa;
     --text-color: #222222;
@@ -56,7 +57,8 @@ nav {
 nav a {
     color: var(--white);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
+    /* Bolder for better readability */
     padding: 0.5rem 1.2rem;
     border-radius: 25px;
     transition: var(--transition);
@@ -65,7 +67,8 @@ nav a {
 
 nav a:hover {
     background-color: var(--light-blue);
-    color: var(--primary-color);
+    color: #000000;
+    /* Black for maximum contrast on hover */
     border-color: var(--white);
     transform: scale(1.05);
 }
@@ -150,16 +153,6 @@ h1 {
     align-self: center;
 }
 
-/* ===== ICON PLACEHOLDER ===== */
-.icon-placeholder {
-    font-size: 4rem;
-    text-align: center;
-    padding: 1rem;
-    background: #f0f2f5;
-    border-radius: var(--border-radius);
-    margin-top: 0.5rem;
-}
-
 /* ===== FOOTER ===== */
 footer {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -174,18 +167,21 @@ footer {
 
 footer p {
     margin: 0.3rem 0;
-    font-size: 0.9rem;
-    opacity: 0.9;
+    font-size: 0.95rem;
+    /* Slightly larger for better readability */
+    opacity: 1;
+    /* Removed opacity for better contrast */
 }
 
 #currentyear {
     font-weight: 700;
-    color: var(--light-blue);
+    color: #90caf9;
+    /* Lighter blue on dark background */
 }
 
 #lastModified {
     font-weight: 300;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -230,10 +226,5 @@ footer p {
     .card-content img {
         width: 150px;
         height: 150px;
-    }
-
-    .icon-placeholder {
-        font-size: 3rem;
-        padding: 0.8rem;
     }
 }
