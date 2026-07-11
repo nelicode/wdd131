@@ -42,16 +42,31 @@
         <section class="card">
             <h2>About Me</h2>
             <div class="card-content">
-                <p>
-                    Hello! I'm Nelida, a passionate web development student from Arequipa, Peru.
-                    I love learning new technologies and building things that make a difference.
-                    Currently, I'm diving deeper into dynamic web fundamentals and JavaScript.
-                </p>
-                <img src="images/profile.jpg" alt="Nelida Colque Salas" width="200" height="200" loading="lazy">
-                <p>
-                    Arequipa is known as the "White City" because of its beautiful sillar stone architecture.
-                    It's surrounded by volcanoes and has a rich cultural heritage.
-                </p>
+                <div class="about-content">
+                    <p>
+                        Hello! I'm Nelida, a passionate web development student from Arequipa, Peru.
+                        I love learning new technologies and building things that make a difference.
+                        Currently, I'm diving deeper into dynamic web fundamentals and JavaScript.
+                        My family is my motivation, and I enjoy spending quality time with them.
+                    </p>
+                    <img src="images/profile.jpg" alt="Nelida Colque Salas" width="200" height="200" loading="lazy">
+                </div>
+
+                <!-- Country Section with Flag -->
+                <div class="country-section">
+                    <div class="country-header">
+                        <img src="images/peru-flag.jpg" alt="Peru Flag" class="flag-image">
+                        <h3 class="country-title">Arequipa, Peru</h3>
+                    </div>
+                    <p class="country-description">
+                        Peru is a country in South America, known for its rich history,
+                        diverse culture, and amazing cuisine. Arequipa, my city, is
+                        famous as the "White City" because of its beautiful sillar stone
+                        architecture. It's surrounded by volcanoes and has a unique
+                        colonial charm. Peru is home to Machu Picchu, one of the New
+                        Seven Wonders of the World.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -59,9 +74,6 @@
         <section class="card">
             <h2>Web Dev Resources</h2>
             <div class="card-content">
-                <p>
-                    Here are some resources I use for web development:
-                </p>
                 <ul>
                     <li>Dev.to Community</li>
                     <li>Smashing Magazine</li>
@@ -77,7 +89,7 @@
     <!-- FOOTER -->
     <footer>
         <p>&copy; <span id="currentyear"></span> Nelida Colque Salas - Arequipa, Peru</p>
-        <p id="lastModified"></p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 

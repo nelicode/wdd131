@@ -2,9 +2,8 @@
 :root {
     --primary-color: #1a237e;
     --secondary-color: #1565c0;
-    /* Lighter blue for better contrast */
     --light-blue: #42a5f5;
-    --background-color: #f5f7fa;
+    --background-color: #f0f4f8;
     --text-color: #222222;
     --white: #ffffff;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -50,7 +49,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 
@@ -58,18 +57,17 @@ nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
-    /* Bolder for better readability */
-    padding: 0.5rem 1.2rem;
-    border-radius: 25px;
+    padding: 0.6rem 1.8rem;
+    border-radius: 4px;
     transition: var(--transition);
-    border: 2px solid transparent;
+    background-color: #000000;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
 nav a:hover {
     background-color: var(--light-blue);
     color: #000000;
-    /* Black for maximum contrast on hover */
-    border-color: var(--white);
     transform: scale(1.05);
 }
 
@@ -105,12 +103,16 @@ h1 {
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== CARD HEADERS WITH BLUE BACKGROUND ===== */
 .card h2 {
     font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-    border-bottom: 3px solid var(--light-blue);
-    padding-bottom: 0.5rem;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    text-align: center;
+    font-weight: 700;
 }
 
 .card-content {
@@ -119,38 +121,94 @@ h1 {
     gap: 1rem;
 }
 
-.card-content p {
+/* ===== ABOUT ME SECTION ===== */
+.about-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.about-content p {
+    flex: 1;
     font-size: 1rem;
     color: #444;
     line-height: 1.8;
 }
 
+.about-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+/* ===== COUNTRY SECTION ===== */
+.country-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.country-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.flag-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+}
+
+.country-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Línea debajo de Arequipa, Peru */
+.country-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+    padding-top: 1rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* ===== WEB DEV RESOURCES ===== */
 .card-content ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
 }
 
 .card-content ul li {
-    padding: 0.4rem 0;
+    padding: 0.6rem 0.8rem;
     border-bottom: 1px solid #eee;
     font-weight: 500;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.card-content ul li:hover {
+    background-color: #f0f4f8;
+    padding-left: 1.2rem;
 }
 
 .card-content ul li::before {
     content: "▸ ";
     color: var(--secondary-color);
     font-weight: 700;
-}
-
-.card-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    align-self: center;
 }
 
 /* ===== FOOTER ===== */
@@ -168,15 +226,12 @@ footer {
 footer p {
     margin: 0.3rem 0;
     font-size: 0.95rem;
-    /* Slightly larger for better readability */
     opacity: 1;
-    /* Removed opacity for better contrast */
 }
 
 #currentyear {
     font-weight: 700;
     color: #90caf9;
-    /* Lighter blue on dark background */
 }
 
 #lastModified {
@@ -211,6 +266,31 @@ footer p {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
     }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .country-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flag-image {
+        width: 120px;
+        height: 80px;
+    }
+
+    .country-title {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -223,8 +303,17 @@ footer p {
         padding: 0.3rem 0.6rem;
     }
 
-    .card-content img {
-        width: 150px;
-        height: 150px;
+    .about-content img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .flag-image {
+        width: 100px;
+        height: 67px;
+    }
+
+    .country-title {
+        font-size: 1.3rem;
     }
 }
