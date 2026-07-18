@@ -1,0 +1,34 @@
+@media screen and (min-width:768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+        grid-column: auto;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+}
