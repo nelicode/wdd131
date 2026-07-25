@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country Page</title>
+    <meta name="author" content="Nelida Colque">
+    <meta name="description" content="Proyecto WDD 131 con detalles geográficos y clima de Arequipa, Perú.">
+
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Perú</h1>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/llama.jpg">
+                <img src="images/llama.jpg" alt="Vista panorámica del animal que representa" width="1000" height="650"
+                    loading="lazy">
+            </picture>
+        </div>
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,285,216 sq km</li>
+                <li><strong>Population:</strong> 34,352,720</li>
+                <li><strong>Capital:</strong> Lima</li>
+                <li><strong>Languages:</strong> Spanish, Quechua, Aymara</li>
+                <li><strong>Currency:</strong> Sol (PEN)</li>
+                <li><strong>Time Zone:</strong> UTC-5</li>
+                <li><strong>Calling Code:</strong> +51</li>
+                <li><strong>Internet TLD:</strong> .pe</li>
+            </ul>
+        </section>
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <img class="weather-icon-mobile" src="images/weather.svg" alt="Clear sky weather icon" width="45"
+                height="45">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">8</span> °C</li>
+                <li><strong>Conditions:</strong> Clear Sky</li>
+                <li><strong>Wind:</strong> <span id="windspeed">12</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nelida Colque | Arequipa, Perú</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

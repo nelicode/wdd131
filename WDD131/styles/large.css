@@ -1,0 +1,155 @@
+/* Color and Layout Configuration Variables - Bandera de Perú */
+:root {
+    --primary-red: #D91023;
+    --accent-white: #FFFFFF;
+    --bg-surface: rgba(255, 255, 255, 0.95);
+    --text-dark: #121212;
+    --text-light: #FFFFFF;
+    --font-family: Arial, sans-serif;
+    --gap-spacing: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-dark);
+    background-color: #F0F4F8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-spacing);
+    padding: var(--gap-spacing);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    width: 100%;
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+section {
+    background-color: var(--bg-surface);
+    padding: 1.25rem;
+    border: 1px solid #D0D7DE;
+    border-radius: 4px;
+}
+
+section h2 {
+    color: var(--primary-red);
+    border-bottom: 2px solid var(--primary-red);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    padding: 0.4rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #E1E8ED;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+.weather-icon-mobile {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    font-size: 0.95rem;
+    border-top: 5px solid var(--text-dark);
+}
+
+.last-modified {
+    margin-top: 0.4rem;
+    font-weight: 300;
+}
+
+@media (min-width: 800px) {
+    main {
+        position: relative;
+        display: block;
+        padding: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-container img {
+        border-radius: 0;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+        width: 320px;
+        z-index: 2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 2.5rem;
+        width: 300px;
+        z-index: 2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-card h2::after {
+        content: " ☀️";
+        float: right;
+        font-size: 1.5rem;
+    }
+}
