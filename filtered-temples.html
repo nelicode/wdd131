@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="templates.css">
+    <link rel="stylesheet" href="templates-large.css">
+    <script src="filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>🏛️ Temple Album</h1>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#" data-filter="home" class="active">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="filter-title">Home</h2>
+        <div class="res-grid" id="temple-cards"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="2026"></span> Nelida Colque Salas-Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
