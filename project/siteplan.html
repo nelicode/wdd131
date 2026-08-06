@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website planning document for Arequipa Chamber of Commerce">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Arequipa Chamber of Commerce</title>
+
+    <!-- Google Fonts (Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+    <header>
+        <h1>🏛️ Arequipa Chamber of Commerce</h1>
+        <p>Website Planning Document</p>
+    </header>
+
+    <main>
+        <!-- ======================================== -->
+        <!-- 1. SITE NAME (Rubric Criterion 4)        -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Arequipa Chamber of Commerce</strong></p>
+            <p>This name represents a professional organization dedicated to supporting businesses and fostering
+                economic growth in Arequipa, Peru. It emphasizes locality and purpose, making it recognizable and
+                relevant to the local business community.</p>
+            <p><em>Optional domain availability:</em> arequipachamber.com</p>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 2. SITE PURPOSE (Rubric Criterion 5)     -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The main purpose of this website is to <strong>serve as a digital hub for the Arequipa business
+                    community</strong>. To achieve this, it will provide the following services and information:</p>
+            <ul>
+                <li><strong>Real-time Weather:</strong> A weather widget on the homepage using the <span
+                        class="accent-text">OpenWeatherMap API</span> to display current conditions in Arequipa.</li>
+                <li><strong>Spotlight Directory:</strong> A featured directory of chamber members categorized as
+                    <strong>Gold</strong> and <strong>Silver</strong> members, loaded dynamically from a JSON file.
+                </li>
+                <li><strong>Events Calendar:</strong> Information about upcoming chamber events, networking
+                    opportunities, and business workshops.</li>
+                <li><strong>Responsive Design:</strong> A fully responsive layout with a hamburger navigation menu for
+                    mobile devices.</li>
+                <li><strong>Last Modified Date:</strong> Automatically displayed at the bottom of the page to show when
+                    the content was last updated.</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 3. SCENARIOS (Rubric Criterion 6)        -->
+        <!-- ======================================== -->
+        <section>
+            <h2>User Scenarios</h2>
+            <p>These are typical questions that site visitors might ask:</p>
+            <ul>
+                <li><strong>Scenario 1:</strong> “I'm a business owner in Arequipa. How can I become a member of the
+                    chamber and what are the benefits?”</li>
+                <li><strong>Scenario 2:</strong> “What chamber events are coming up this month, and how can I register
+                    to attend?”</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 4. COLOR SCHEMA (Rubric Criteria 7 & 8)  -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Color Schema</h2>
+            <p>Professional and warm colors have been selected to represent the chamber's authority and Arequipa's
+                vibrant business community. <strong>This document already uses these colors in its design</strong>
+                (check the backgrounds, borders, and text).</p>
+            <ul>
+                <li><span class="color-swatch primary-swatch"></span> <strong>#1B3A4B (Deep Blue)</strong> — Used for
+                    <strong>titles, headings, navigation, and footers</strong>. It conveys trust, professionalism, and
+                    stability.
+                </li>
+                <li><span class="color-swatch secondary-swatch"></span> <strong>#F5F0E8 (Warm Beige)</strong> — Used for
+                    <strong>section backgrounds and cards</strong>. It provides warmth and a welcoming feel.
+                </li>
+                <li><span class="color-swatch accent-swatch"></span> <strong>#C49A6C (Gold)</strong> — Used for
+                    <strong>call-to-action buttons, highlights, and Gold member badges</strong>. It represents
+                    excellence and prestige.
+                </li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 5. TYPOGRAPHY (Rubric Criteria 9 & 10)   -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Typography</h2>
+            <p>The following Google Fonts will be used to reflect professionalism and readability. <strong>This document
+                    already uses both fonts</strong> (check the headings and body text).</p>
+            <ul>
+                <li><strong>Playfair Display (serif)</strong> — Used for <strong>headings (h1, h2, h3)</strong>. It is
+                    an elegant and authoritative font, ideal for a chamber of commerce.</li>
+                <li><strong>Nunito (sans-serif)</strong> — Used for <strong>paragraphs, lists, and general body
+                        text</strong>. It is rounded, friendly, and highly readable for directory information and
+                    events.</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 6. WIREFRAMES (Rubric Criterion 11)      -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Wireframes</h2>
+            <p>The following wireframes are <strong>black and white sketches</strong> showing the structure of the
+                <strong>home page</strong> in both mobile and desktop views. They focus on layout and functionality, not
+                colors, images, or typography.
+            </p>
+
+            <div class="wireframe-grid">
+                <!-- MOBILE WIREFRAME IMAGE -->
+                <figure>
+                    <img src="images/wireframe-mobile.png"
+                        alt="Black and white wireframe sketch for the mobile home page showing Logo, Menu, Weather, Spotlight Directory, Events, and Footer stacked vertically."
+                        class="wireframe-img">
+                    <figcaption><strong>Figure 1:</strong> Mobile wireframe sketch (vertical layout)</figcaption>
+                </figure>
+
+                <!-- DESKTOP WIREFRAME IMAGE -->
+                <figure>
+                    <img src="images/wireframe-desktop.png"
+                        alt="Black and white wireframe sketch for the desktop home page showing Logo with navigation, Hero with Weather, Featured Image, Spotlight Directory grid, Events sidebar, and Footer."
+                        class="wireframe-img">
+                    <figcaption><strong>Figure 2:</strong> Desktop wireframe sketch (horizontal layout)</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Arequipa Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
