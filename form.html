@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <!-- CUADRO ROSADO QUE CONTIENE TODO -->
+        <div class="pink-box">
+            <h1>Product Review Form</h1>
+
+            <form method="get" action="review.html" id="reviewForm">
+                <!-- PRODUCT NAME -->
+                <label for="productName"><strong>Product Name:</strong></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+
+                <!-- OVERALL RATING -->
+                <fieldset class="rating-group">
+                    <legend><strong>Overall Rating:</strong></legend>
+                    <label>
+                        <input type="radio" name="rating" value="1" required> ⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2"> ⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐
+                    </label>
+                </fieldset>
+
+                <!-- DATE OF INSTALLATION -->
+                <label for="installDate"><strong>Date of Installation:</strong></label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <!-- USEFUL FEATURES -->
+                <fieldset class="features-group">
+                    <legend><strong>Useful Features (check all that apply):</strong></legend>
+                    <ul class="features-list">
+                        <li><label><input type="checkbox" name="features" value="durability"> Durability</label></li>
+                        <li><label><input type="checkbox" name="features" value="design"> Design</label></li>
+                        <li><label><input type="checkbox" name="features" value="ease"> Ease of Use</label></li>
+                        <li><label><input type="checkbox" name="features" value="affordability"> Affordability</label>
+                        </li>
+                        <li><label><input type="checkbox" name="features" value="performance"> Performance</label></li>
+                    </ul>
+                </fieldset>
+
+                <!-- WRITTEN REVIEW -->
+                <label for="reviewText"><strong>Written Review:</strong></label>
+                <textarea id="reviewText" name="reviewText" rows="4" placeholder="Write your review here..."></textarea>
+
+                <!-- YOUR NAME -->
+                <label for="userName"><strong>Your Name:</strong></label>
+                <input type="text" id="userName" name="userName" placeholder="Your name...">
+
+                <!-- SUBMIT -->
+                <input type="submit" value="Submit Review">
+            </form>
+        </div>
+        <!-- FIN DEL CUADRO ROSADO -->
+    </main>
+
+    <footer>
+        <p>© 2026 Nelida Colque Salas | Peru</p>
+        <p>Last Modification: <span id="footerDate"></span></p>
+    </footer>
+
+    <script>
+        const now = new Date();
+        const formatted = now.getFullYear() + '-' +
+            String(now.getMonth() + 1).padStart(2, '0') + '-' +
+            String(now.getDate()).padStart(2, '0') + ' ' +
+            String(now.getHours()).padStart(2, '0') + ':' +
+            String(now.getMinutes()).padStart(2, '0') + ':' +
+            String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('footerDate').textContent = formatted;
+    </script>
+</body>
+
+</html>

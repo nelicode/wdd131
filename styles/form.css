@@ -1,0 +1,181 @@
+/* ===== RESET Y GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5fa;
+    color: #1a2a3a;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===== EL GRAN CUADRO ROSADO ===== */
+.pink-box {
+    background-color: #fce4ec;
+    /* Fondo rosado suave */
+    padding: 2rem;
+    border-radius: 16px;
+    border: 3px solid #ff6b9d;
+    box-shadow: 0 8px 30px rgba(255, 107, 157, 0.15);
+}
+
+/* ===== TÍTULO DENTRO DEL CUADRO ===== */
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #ff6b9d;
+    padding-bottom: 0.6rem;
+}
+
+/* ===== ETIQUETAS Y CAMPOS ===== */
+label,
+legend {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #003366;
+}
+
+legend {
+    margin-top: 0.2rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #d0d7e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #ffffff;
+    transition: border-color 0.2s;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):focus,
+select:focus,
+textarea:focus {
+    border-color: #ff6b9d;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.2);
+}
+
+/* ===== RADIO ===== */
+.rating-group label {
+    display: inline-block;
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: auto;
+    accent-color: #ff6b9d;
+    transform: scale(1.1);
+}
+
+/* ===== CHECKBOXES ===== */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.features-list li {
+    background: #ffffff;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b9d;
+    transition: background 0.2s;
+}
+
+.features-list li:hover {
+    background: #fef0f5;
+}
+
+.features-list label {
+    display: inline-block;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.6rem;
+    accent-color: #ff6b9d;
+    transform: scale(1.1);
+}
+
+/* ===== BOTÓN ===== */
+input[type="submit"] {
+    width: 100%;
+    background: #ff6b9d;
+    color: rgb(16, 14, 14);
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 8px;
+    transition: background 0.25s;
+}
+
+input[type="submit"]:hover {
+    background: #e05585;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5a6a7a;
+    background-color: #fce4ec;
+    /* Mismo rosado */
+    padding: 1.2rem 1rem;
+    border-radius: 12px;
+    border-top: 4px solid #ff6b9d;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 0.8rem;
+    }
+
+    .pink-box {
+        padding: 1.2rem;
+    }
+
+    .rating-group label {
+        margin-right: 0.4rem;
+        font-size: 1.1rem;
+    }
+
+    .features-list li {
+        padding: 0.3rem 0.6rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
