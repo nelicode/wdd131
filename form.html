@@ -18,15 +18,19 @@
 
     <main>
         <form method="get" action="review.html" id="reviewForm" class="pink-box">
-            <!-- PRODUCT NAME -->
-            <label for="productName"><strong>Product Name:</strong></label>
+            <!-- PRODUCT NAME (OBLIGATORIO) -->
+            <label for="productName">
+                <strong>Product Name:</strong> <span class="required-asterisk">*</span>
+            </label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Select a Product...</option>
             </select>
 
-            <!-- OVERALL RATING -->
+            <!-- OVERALL RATING (OBLIGATORIO) -->
             <fieldset class="rating-group">
-                <legend><strong>Overall Rating:</strong></legend>
+                <legend>
+                    <strong>Overall Rating:</strong> <span class="required-asterisk">*</span>
+                </legend>
                 <label for="rating1">
                     <input type="radio" id="rating1" name="rating" value="1" required> ⭐
                 </label>
@@ -44,11 +48,13 @@
                 </label>
             </fieldset>
 
-            <!-- DATE OF INSTALLATION -->
-            <label for="installDate"><strong>Date of Installation:</strong></label>
+            <!-- DATE OF INSTALLATION (OBLIGATORIO) -->
+            <label for="installDate">
+                <strong>Date of Installation:</strong> <span class="required-asterisk">*</span>
+            </label>
             <input type="date" id="installDate" name="installDate" required>
 
-            <!-- USEFUL FEATURES -->
+            <!-- USEFUL FEATURES (OPCIONAL) -->
             <fieldset class="features-group">
                 <legend><strong>Useful Features (check all that apply):</strong></legend>
                 <ul class="features-list">
@@ -65,11 +71,11 @@
                 </ul>
             </fieldset>
 
-            <!-- WRITTEN REVIEW -->
+            <!-- WRITTEN REVIEW (OPCIONAL) -->
             <label for="reviewText"><strong>Written Review:</strong></label>
             <textarea id="reviewText" name="reviewText" rows="4" placeholder="Write your review here..."></textarea>
 
-            <!-- YOUR NAME -->
+            <!-- YOUR NAME (OPCIONAL) -->
             <label for="userName"><strong>Your Name:</strong></label>
             <input type="text" id="userName" name="userName" placeholder="Your name...">
 

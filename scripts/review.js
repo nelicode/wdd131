@@ -1,4 +1,4 @@
-// ===== INCREMENT REVIEW COUNTER =====
+// ===== INCREMENTAR CONTADOR =====
 let reviewCount = localStorage.getItem('reviewCount');
 if (reviewCount === null) {
     reviewCount = 0;
@@ -8,11 +8,10 @@ if (reviewCount === null) {
 reviewCount++;
 localStorage.setItem('reviewCount', reviewCount);
 
-// ===== DISPLAY COUNTER =====
+// ===== MOSTRAR CONTADOR =====
 document.getElementById('reviewCount').textContent = reviewCount;
-console.log('✅ Counter updated. Total reviews: ' + reviewCount);
 
-// ===== UPDATE FOOTER DATE =====
+// ===== FECHA EN EL PIE DE PÁGINA =====
 const now = new Date();
 const formatted = now.getFullYear() + '-' +
     String(now.getMonth() + 1).padStart(2, '0') + '-' +

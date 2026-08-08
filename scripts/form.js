@@ -1,4 +1,4 @@
-// ===== PRODUCT ARRAY =====
+// ===== ARRAY DE PRODUCTOS =====
 const products = [
     { id: "fc-1888", name: "Flux Capacitor", averagerating: 4.5 },
     { id: "fc-2050", name: "Power Laces", averagerating: 4.7 },
@@ -17,21 +17,18 @@ const products = [
     { id: "tech-010", name: "External SSD 1TB", averagerating: 4.7 }
 ];
 
-// ===== FILL THE SELECT =====
+// ===== LLENAR EL SELECT =====
 const select = document.getElementById('productName');
-if (!select) {
-    console.error('Element with id "productName" not found.');
-} else {
+if (select) {
     products.forEach(product => {
         const option = document.createElement('option');
         option.value = product.id;
         option.textContent = product.name;
         select.appendChild(option);
     });
-    console.log('✅ Products loaded. Total: ' + products.length);
 }
 
-// ===== UPDATE FOOTER DATE =====
+// ===== FECHA EN EL PIE DE PÁGINA =====
 const now = new Date();
 const formatted = now.getFullYear() + '-' +
     String(now.getMonth() + 1).padStart(2, '0') + '-' +
