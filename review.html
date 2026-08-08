@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmation page for product review submission.">
+    <meta name="author" content="[Tu Nombre]">
     <title>Review Confirmation</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="css/form.css">
     <script src="js/review.js" defer></script>
 </head>
 
@@ -27,17 +29,6 @@
         <p>© 2026 [Tu Nombre] | All rights reserved</p>
         <p>Last Modification: <span id="footerDate"></span></p>
     </footer>
-
-    <script>
-        const now = new Date();
-        const formatted = now.getFullYear() + '-' +
-            String(now.getMonth() + 1).padStart(2, '0') + '-' +
-            String(now.getDate()).padStart(2, '0') + ' ' +
-            String(now.getHours()).padStart(2, '0') + ':' +
-            String(now.getMinutes()).padStart(2, '0') + ':' +
-            String(now.getSeconds()).padStart(2, '0');
-        document.getElementById('footerDate').textContent = formatted;
-    </script>
 </body>
 
 </html>

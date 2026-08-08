@@ -1,3 +1,4 @@
+// ===== PRODUCT ARRAY =====
 const products = [
     { id: "fc-1888", name: "Flux Capacitor", averagerating: 4.5 },
     { id: "fc-2050", name: "Power Laces", averagerating: 4.7 },
@@ -16,9 +17,10 @@ const products = [
     { id: "tech-010", name: "External SSD 1TB", averagerating: 4.7 }
 ];
 
+// ===== FILL THE SELECT =====
 const select = document.getElementById('productName');
 if (!select) {
-    console.error('❌ No se encontró el elemento con id "productName"');
+    console.error('Element with id "productName" not found.');
 } else {
     products.forEach(product => {
         const option = document.createElement('option');
@@ -26,5 +28,18 @@ if (!select) {
         option.textContent = product.name;
         select.appendChild(option);
     });
-    console.log('✅ Productos cargados. Total: ' + products.length);
+    console.log('✅ Products loaded. Total: ' + products.length);
+}
+
+// ===== UPDATE FOOTER DATE =====
+const now = new Date();
+const formatted = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0') + ' ' +
+    String(now.getHours()).padStart(2, '0') + ':' +
+    String(now.getMinutes()).padStart(2, '0') + ':' +
+    String(now.getSeconds()).padStart(2, '0');
+const footerSpan = document.getElementById('footerDate');
+if (footerSpan) {
+    footerSpan.textContent = formatted;
 }
