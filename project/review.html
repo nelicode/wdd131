@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Submitted</title>
+    <meta name="description" content="Thank you for your feedback." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/normal.css" media="screen and (min-width: 640px)" />
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 1024px)" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🏛️</span>
+                    <span class="logo-text">CHAMBER<br /><span class="logo-sub">AREQUIPA</span></span>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="form.html">Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="confirmation">
+            <h1>Thank You for Your Feedback!</h1>
+            <p>Your insights help us serve the business community better.</p>
+            <p>You have submitted <strong><span id="review-count">0</span></strong> survey(s) so far.</p>
+            <p><a href="form.html" class="btn btn-gold">Submit Another Survey</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Where We Are</h4>
+                <address>123 Main Ave, Arequipa<br />Phone: (054) 45-67-89</address>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" aria-label="Instagram">
+                            <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" class="social-icon" />
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Facebook">
+                            <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" class="social-icon" />
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="TikTok">
+                            <img src="https://cdn.simpleicons.org/tiktok" alt="TikTok" class="social-icon" />
+                            TikTok
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-small">&copy; 2026 Coffee Spot &bull; <a href="references.html">References</a></p>
+                <p class="footer-small" id="last-modified">Last modification: loading…</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+
+</html>

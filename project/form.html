@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Experience Survey</title>
+    <meta name="description" content="Share your experience with the Chamber of Commerce." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/normal.css" media="screen and (min-width: 640px)" />
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 1024px)" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>" />
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">🏛️</span>
+                    <span class="logo-text">CHAMBER<br /><span class="logo-sub">AREQUIPA</span></span>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="form.html" class="active">Survey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h1>Member Experience Survey</h1>
+            <p>Help us improve by sharing your feedback about our services and events.</p>
+
+            <form action="review.html" method="get" id="review-form">
+                <!-- Service / Event Name -->
+                <div class="form-group">
+                    <label for="product">Service or Event Name *</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a service or event …</option>
+                    </select>
+                </div>
+
+                <!-- Overall Satisfaction (stars) -->
+                <div class="form-group">
+                    <label>Overall Satisfaction *</label>
+                    <div class="rating-stars">
+                        <input type="radio" name="rating" id="star1" value="1" required />
+                        <label for="star1" title="1 star">☆</label>
+                        <input type="radio" name="rating" id="star2" value="2" required />
+                        <label for="star2" title="2 stars">☆</label>
+                        <input type="radio" name="rating" id="star3" value="3" required />
+                        <label for="star3" title="3 stars">☆</label>
+                        <input type="radio" name="rating" id="star4" value="4" required />
+                        <label for="star4" title="4 stars">☆</label>
+                        <input type="radio" name="rating" id="star5" value="5" required />
+                        <label for="star5" title="5 stars">☆</label>
+                    </div>
+                </div>
+
+                <!-- Date of Experience -->
+                <div class="form-group">
+                    <label for="installdate">Date of Experience *</label>
+                    <input type="date" id="installdate" name="installdate" required />
+                    <small>When did you use this service or attend this event?</small>
+                </div>
+
+                <!-- Valuable Aspects (checkboxes) -->
+                <div class="form-group">
+                    <label>Which aspects did you find valuable? (check all that apply)</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="feature1" name="features" value="Networking" />
+                        <label for="feature1">Networking Opportunities</label>
+                        <input type="checkbox" id="feature2" name="features" value="Resources" />
+                        <label for="feature2">Business Resources</label>
+                        <input type="checkbox" id="feature3" name="features" value="Events" />
+                        <label for="feature3">Events & Workshops</label>
+                        <input type="checkbox" id="feature4" name="features" value="Support" />
+                        <label for="feature4">Member Support</label>
+                    </div>
+                </div>
+
+                <!-- Written Feedback -->
+                <div class="form-group">
+                    <label for="review">Your Feedback (optional)</label>
+                    <textarea id="review" name="review" rows="4"
+                        placeholder="Tell us about your experience…"></textarea>
+                </div>
+
+                <!-- Your Name (optional) -->
+                <div class="form-group">
+                    <label for="username">Your Name (optional)</label>
+                    <input type="text" id="username" name="username" placeholder="e.g., Juan Perez" />
+                </div>
+
+                <button type="submit" class="btn btn-gold">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>Where We Are</h4>
+            <address>123 Main Ave, Arequipa<br />Phone: (054) 45-67-89</address>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul class="social-links">
+                <li>
+                    <a href="#" aria-label="Instagram">
+                        <img src="https://cdn.simpleicons.org/instagram" alt="Instagram" class="social-icon" />
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Facebook">
+                        <img src="https://cdn.simpleicons.org/facebook" alt="Facebook" class="social-icon" />
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="TikTok">
+                        <img src="https://cdn.simpleicons.org/tiktok" alt="TikTok" class="social-icon" />
+                        TikTok
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <p class="footer-small">&copy; 2026 Coffee Spot &bull; <a href="references.html">References</a></p>
+            <p class="footer-small" id="last-modified">Last modification: loading…</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="scripts/form.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Minera Los Andes",
+        "level": "gold",
+        "description": "Leading sustainable mining in the southern region, driving local development.",
+        "image": "images/1.jpeg"
+    },
+    {
+        "name": "Tecnología Andes IT",
+        "level": "silver",
+        "description": "Innovative IT solutions, software development, and cybersecurity for businesses.",
+        "image": "images/2.jpeg"
+    },
+    {
+        "name": "Textiles Arequipa",
+        "level": "silver",
+        "description": "High-quality garments with traditional designs and natural alpaca fibers.",
+        "image": "images/3.jpeg"
+    },
+    {
+        "name": "Construcción Civil SAC",
+        "level": "gold",
+        "description": "Sustainable infrastructure projects and commercial buildings in Arequipa.",
+        "image": "images/4.jpeg"
+    },
+    {
+        "name": "Restaurante Sabores Peruanos",
+        "level": "gold",
+        "description": "Traditional Arequipan cuisine with local ingredients and family recipes.",
+        "image": "images/5.jpeg"
+    },
+    {
+        "name": "Café Arequipa Export",
+        "level": "silver",
+        "description": "Organic high-altitude coffee, certified for direct international export.",
+        "image": "images/6.jpeg"
+    }
+]
