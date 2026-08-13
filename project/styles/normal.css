@@ -105,7 +105,32 @@
     margin-top: 0.5rem;
 }
 
-/* Para tarjetas destacadas en index (si no usas badge) */
 .member-card h3 {
     margin: 0.5rem 0 0.2rem;
+}
+.featured-members,
+.events-preview {
+    margin: 1.5rem 0;
+}
+
+.featured-events-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.featured-members {
+    margin: 0;
+}
+
+.events-preview {
+    margin: 0;
+}
+
+@media (max-width: 639px) {
+    .featured-events-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }

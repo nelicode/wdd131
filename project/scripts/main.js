@@ -71,20 +71,20 @@ async function loadMembers() {
         const members = await response.json();
 
         // --- Homepage: featured members (2 gold, 2 silver) ---
+        // --- Homepage: featured members (con nombre, nivel y descripción) ---
         const featuredContainer = document.getElementById('featured-members');
         if (featuredContainer) {
+            // Tomamos 2 gold y 2 silver (o los que quieras)
             const gold = members.filter(m => m.level === 'gold').slice(0, 2);
             const silver = members.filter(m => m.level === 'silver').slice(0, 2);
             const featured = [...gold, ...silver];
-            featuredContainer.innerHTML = featured.map((m, index) => `
-                <div class="member-card ${m.level}">
-                    <span class="member-number">${index + 1}</span>
-                    <img src="${m.image || 'images/default.jpg'}" alt="${m.name}" loading="lazy" class="member-img" />
-                    <h3>${m.level.toUpperCase()}</h3>
-                    <p><strong>${m.name}</strong></p>
-                    <p>${m.description}</p>
-                </div>
-            `).join('');
+            featuredContainer.innerHTML = featured.map(m => `
+        <div class="member-card ${m.level}">
+            <h3>${m.name}</h3>
+            <span class="badge">${m.level.toUpperCase()}</span>
+            <p>${m.description}</p>
+        </div>
+    `).join('');
         }
 
         // --- Members page: directory with filters ---

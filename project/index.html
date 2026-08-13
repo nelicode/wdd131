@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arequipa Chamber of Commerce</title>
+    <meta name="author" content="Nelida Colque Slas" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,15 +63,27 @@
             </div>
         </section>
 
-        <!-- Featured Members -->
-        <section class="featured-members">
-            <h2>Featured Members Directory</h2>
-            <div class="member-grid" id="featured-members">
-                <!-- populated by JavaScript from JSON -->
-            </div>
-        </section>
+        <!-- ====== WRAPPER: MIEMBROS + EVENTOS LADO A LADO ====== -->
+        <div class="featured-events-wrapper">
+            <!-- Featured Members (4 tarjetas: 2 gold, 2 silver) -->
+            <section class="featured-members">
+                <h2>Featured Members Directory</h2>
+                <div class="member-grid" id="featured-members">
+                    <!-- JS llena esto con 4 tarjetas (2 gold, 2 silver) -->
+                </div>
+            </section>
 
-        <!-- ====== ANSWER TO SCENARIO 1: Become a Member ====== -->
+            <!-- Chamber Events (3 en columna) -->
+            <section class="events-preview">
+                <h2>Chamber Events</h2>
+                <ul class="event-list" id="event-preview-list">
+                    <!-- JS llena esto con 3 eventos -->
+                </ul>
+                <a href="members.html" class="btn btn-outline">View All Events</a>
+            </section>
+        </div>
+
+        <!-- ====== ANSWER TO SCENARIO 1: Become a Member (benefits) ====== -->
         <section class="membership-info">
             <h2>Join the Chamber – Benefits for Your Business</h2>
             <div class="benefits-grid">
@@ -91,11 +104,11 @@
             <p class="contact-helper">Have questions? Call us at (054) 45-67-89 or email info@arequipachamber.com</p>
         </section>
 
-        <!-- ====== ANSWER TO SCENARIO 2: Events & Registration (ÚNICA sección de eventos) ====== -->
-        <section class="events-preview">
+        <!-- ====== ANSWER TO SCENARIO 2: Events & Registration (duplicado pero con registro) ====== -->
+        <section class="events-preview-secondary">
             <h2>Upcoming Chamber Events – This Month</h2>
-            <div class="event-list" id="event-preview-list">
-                <!-- JS llenará esta lista con eventos -->
+            <div class="event-list" id="event-preview-list-secondary">
+                <!-- JS llenará esta lista con eventos (opcional) -->
             </div>
             <p class="contact-helper">
                 📞 To register, call (054) 45-67-89 or
@@ -137,6 +150,7 @@
             <div class="footer-col">
                 <p class="footer-small">&copy; 2026 Coffee Spot &bull; <a href="references.html">References</a></p>
                 <p class="footer-small" id="last-modified">Last modification: loading…</p>
+                <p class="footer-extra">Nelida Colque Slas</p>
             </div>
         </div>
     </footer>
